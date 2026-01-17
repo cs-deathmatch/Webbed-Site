@@ -4,12 +4,12 @@
 <head>
     <!-- Primary Meta Tags -->
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Lise Gay">
-	<meta name="robots" content="index, follow">
-	<meta name="rating" content="general">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Lise Gay">
+    <meta name="robots" content="index, follow">
+    <meta name="rating" content="general">
 
-    <title>Lise's silly lil' homepage</title>
+    <title>Pink Pwny Club map list</title>
     <meta name="title" content="Pink Pwny Club map list" />
     <meta name="description" content="The list of maps running on my TF2 Classified server" />
     <meta name="theme-color" content="#eb5a10">
@@ -30,9 +30,6 @@
     <meta property="og:title" content="Pink Pwny Club map list" />
     <meta property="og:description" content="The list of maps running on my TF2 Classified server" />
     <meta property="og:image" content="https://wii.gay/tf2c/assets/mapimages/live/ctf_2fort.jpg" />
-
-    
-
 </head>
 <style>
 .mainbox {
@@ -48,6 +45,37 @@
 	justify-content: center;
   align-items: center;
 }
+img[src*="mapimages"] {
+	cursor: pointer;
+}
+summary{
+	cursor: pointer;
+}
+.toast {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	padding: 12px 24px;
+	border-radius: 4px;
+	font-size: 16px;
+	pointer-events: none;
+	animation: floatUp 2s ease-out forwards;
+	z-index: 1000;
+  font-family: 'TF2 Secondary';
+}
+@keyframes floatUp {
+	0% {
+		opacity: 1;
+		transform: translateX(-50%) translateY(0);
+	}
+	100% {
+		opacity: 0;
+		transform: translateX(-50%) translateY(-50px);
+	}
+}
 </style>
 
 <!--Everything in this file sucks-->
@@ -60,17 +88,56 @@
     </summary>
     <div class="interior">
       <div class="mapbox">
-        <img width="270" src="/tf2c/assets/mapimages/live/cp_5gorge.jpg" alt="cp_5gorge">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_dustbowl.jpg" alt="cp_dustbowl">
         <div class="mapname">
-          <img class="cp_5gorge" data-copy="!nominate cp_" title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
-          <p>5Gorge</p>
+          <img title="Attack/Defense" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/attack defense icon.png" alt="Attack/Defense">
+          <p>Dustbowl</p>
         </div>
       </div>
       <div class="mapbox">
-        <img width="270" src="/tf2c/assets/mapimages/live/cp_dustbowl.jpg" alt="cp_dustbowl">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_egypt_final.jpg" alt="cp_egypt_final">
         <div class="mapname">
-          <img title="Attack/Defense" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/attack defense icon.png" alt="Attack Defense">
-          <p>Badlands</p>
+          <img title="Attack/Defense" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/attack defense icon.png" alt="Attack/Defense">
+          <p>Egypt</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_gorge.jpg" alt="cp_gorge">
+        <div class="mapname">
+          <img title="Attack/Defense" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/attack defense icon.png" alt="Attack/Defense">
+          <p>Gorge</p>
+        </div>
+      </div>
+    </div>
+    <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_gravelpit.jpg" alt="cp_gravelpit">
+        <div class="mapname">
+          <img title="Attack/Defense" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/attack defense icon.png" alt="Attack/Defense">
+          <p>Gravel Pit</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_junction_final.jpg" alt="cp_junction_final">
+        <div class="mapname">
+          <img title="Attack/Defense" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/attack defense icon.png" alt="Attack/Defense">
+          <p>Junction</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_mountainlab.jpg" alt="cp_mountainlab">
+        <div class="mapname">
+          <img title="Attack/Defense" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/attack defense icon.png" alt="Attack/Defense">
+          <p>Mountain Lab</p>
+        </div>
+      </div>
+    </div>
+    <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_steel.jpg" alt="cp_steel">
+        <div class="mapname">
+          <img title="Attack/Defense" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/attack defense icon.png" alt="Attack/Defense">
+          <p>Steel</p>
         </div>
       </div>
       <div class="mapbox">
@@ -80,8 +147,144 @@
           <p>2fort</p>
         </div>
       </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/ctf_doublecross.jpg" alt="ctf_doublecross">
+        <div class="mapname">
+          <img title="Capture The Flag" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/ctf icon.png" alt="Capture The Flag">
+          <p>Double Cross</p>
+        </div>
+      </div>
     </div>
     <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/ctf_landfall.jpg" alt="ctf_landfall">
+        <div class="mapname">
+          <img title="Capture The Flag" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/ctf icon.png" alt="Capture The Flag">
+          <p>Landfall</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/ctf_pelican_peak.jpg" alt="ctf_pelican_peak">
+        <div class="mapname">
+          <img title="Capture The Flag" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/ctf icon.png" alt="Capture The Flag">
+          <p>Pelican Peak</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/ctf_sawmill.jpg" alt="ctf_sawmill">
+        <div class="mapname">
+          <img title="Capture The Flag" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/ctf icon.png" alt="Capture The Flag">
+          <p>Sawmill</p>
+        </div>
+      </div>
+    </div>
+    <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/ctf_turbine.jpg" alt="ctf_turbine">
+        <div class="mapname">
+          <img title="Capture The Flag" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/ctf icon.png" alt="Capture The Flag">
+          <p>Turbine</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/ctf_well.jpg" alt="ctf_well">
+        <div class="mapname">
+          <img title="Capture The Flag" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/ctf icon.png" alt="Capture The Flag">
+          <p>Well</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_badlands.jpg" alt="cp_badlands">
+        <div class="mapname">
+          <img title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
+          <p>Badlands</p>
+        </div>
+      </div>
+    </div>
+    <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_coldfront.jpg" alt="cp_coldfront">
+        <div class="mapname">
+          <img title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
+          <p>Coldfront</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_fastlane.jpg" alt="cp_fastlane">
+        <div class="mapname">
+          <img title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
+          <p>Fastlane</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_foundry.jpg" alt="cp_foundry">
+        <div class="mapname">
+          <img title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
+          <p>Foundry</p>
+        </div>
+      </div>
+    </div>
+        <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_freight_final1.jpg" alt="cp_freight_final1">
+        <div class="mapname">
+          <img title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
+          <p>Freight</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_5gorge.jpg" alt="cp_5gorge">
+        <div class="mapname">
+          <img title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
+          <p>5Gorge</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_granary.jpg" alt="cp_granary">
+        <div class="mapname">
+          <img title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
+          <p>Granary</p>
+        </div>
+      </div>
+    </div>
+        <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_gullywash.jpg" alt="cp_gullywash">
+        <div class="mapname">
+          <img title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
+          <p>Gullywash</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_powerhouse.jpg" alt="cp_powerhouse">
+        <div class="mapname">
+          <img title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
+          <p>Powerhouse</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_well.jpg" alt="cp_well">
+        <div class="mapname">
+          <img title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
+          <p>Well</p>
+        </div>
+      </div>
+    </div>
+        <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/cp_yukon_final.jpg" alt="cp_yukon_final">
+        <div class="mapname">
+          <img title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
+          <p>Yukon Final</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/koth_badlands.jpg.jpg" alt="koth_badlands">
+        <div class="mapname">
+          <img title="King Of The Hill" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/koth icon.png" alt="King Of The Hill">
+          <p>Badlands</p>
+        </div>
+      </div>
       <div class="mapbox">
         <img width="270" src="/tf2c/assets/mapimages/live/koth_harvest_final.jpg" alt="koth_harvest_final">
         <div class="mapname">
@@ -89,22 +292,130 @@
           <p>Harvest</p>
         </div>
       </div>
-       <div class="mapbox">
+    </div>
+            <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/koth_highpass.jpg" alt="koth_highpass">
+        <div class="mapname">
+          <img title="King Of The Hill" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/koth icon.png" alt="King Of The Hill">
+          <p>Highpass</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/koth_king.jpg" alt="koth_king">
+        <div class="mapname">
+          <img title="King Of The Hill" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/koth icon.png" alt="King Of The Hill">
+          <p>Kong King</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/koth_lakeside_final.jpg" alt="koth_lakeside_final">
+        <div class="mapname">
+          <img title="King Of The Hill" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/koth icon.png" alt="King Of The Hill">
+          <p>Lakeside</p>
+        </div>
+      </div>
+    </div>
+     <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/koth_nucleus.jpg" alt="koth_nucleus">
+        <div class="mapname">
+          <img title="King Of The Hill" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/koth icon.png" alt="King Of The Hill">
+          <p>Nucleus</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/koth_sawmill.jpg" alt="koth_sawmill">
+        <div class="mapname">
+          <img title="King Of The Hill" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/koth icon.png" alt="King Of The Hill">
+          <p>Sawmill</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/koth_viaduct.jpg" alt="koth_viaduct">
+        <div class="mapname">
+          <img title="King Of The Hill" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/koth icon.png" alt="King Of The Hill">
+          <p>Viaduct</p>
+        </div>
+      </div>
+    </div>
+                <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/pl_badwater.jpg" alt="pl_badwater">
+        <div class="mapname">
+          <img title="Payload" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/pl icon.png" alt="Payload">
+          <p>Badwater Basin</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/pl_barnblitz.jpg" alt="pl_barnblitz">
+        <div class="mapname">
+          <img title="Payload" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/pl icon.png" alt="Payload">
+          <p>Barnblitz</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/pl_frontier_final.jpg" alt="pl_frontier_final">
+        <div class="mapname">
+          <img title="Payload" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/pl icon.png" alt="Payload">
+          <p>Frontier</p>
+        </div>
+      </div>
+    </div>
+                <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/pl_goldrush.jpg" alt="pl_goldrush">
+        <div class="mapname">
+          <img title="Payload" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/pl icon.png" alt="Payload">
+          <p>Goldrush</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/pl_hoodoo_final.jpg" alt="pl_hoodoo_final">
+        <div class="mapname">
+          <img title="Payload" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/pl icon.png" alt="Payload">
+          <p>Hoodoo</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/pl_thundermountain.jpg" alt="pl_thundermountain">
+        <div class="mapname">
+          <img title="Payload" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/pl icon.png" alt="Payload">
+          <p>Thunder Mountain</p>
+        </div>
+      </div>
+    </div>
+                <div class="interior">
+      <div class="mapbox">
         <img width="270" src="/tf2c/assets/mapimages/live/pl_upward.jpg" alt="pl_upward">
         <div class="mapname">
           <img title="Payload" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/pl icon.png" alt="Payload">
           <p>Upward</p>
         </div>
       </div>
-        <div class="mapbox">
+      <div class="mapbox">
         <img width="270" src="/tf2c/assets/mapimages/live/plr_hightower.jpg" alt="plr_hightower">
         <div class="mapname">
           <img title="Payload Race" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/plr icon.png" alt="Payload Race">
-          <p>Hightower</p>
+          <p>High Tower</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/plr_nightfall_final.jpg" alt="plr_nightfall_final">
+        <div class="mapname">
+          <img title="Payload Race" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/plr icon.png" alt="Payload Race">
+          <p>Nightfall</p>
         </div>
       </div>
     </div>
-    <div class="interior">
+                    <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/live/plr_pipeline.jpg" alt="plr_pipeline">
+        <div class="mapname">
+          <img title="Payload Race" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/plr icon.png" alt="Payload Race">
+          <p>Pipeline</p>
+        </div>
+      </div>
       <div class="mapbox">
         <img width="270" src="/tf2c/assets/mapimages/live/sd_doomsday.jpg" alt="sd_doomsday">
         <div class="mapname">
@@ -115,7 +426,7 @@
       <div class="mapbox">
         <img width="270" src="/tf2c/assets/mapimages/live/tc_hydro.jpg" alt="tc_hydro">
         <div class="mapname">
-          <img title="Territorial Control" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Territorial Control">
+          <img title="Territorial Control" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/tc icon.png" alt="Territorial Control">
           <p>Hydro</p>
         </div>
       </div>
@@ -125,10 +436,239 @@
     <summary>
       TF2 Classified Maps
     </summary>
+    <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/cp_amaranth.jpg" alt="cp_amaranth">
+        <div class="mapname">
+          <img title="Attack/Defense" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/attack defense icon.png" alt="Attack/Defense">
+          <p>Amaranth</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/cp_furnace_rc.jpg" alt="cp_furnace_rc">
+        <div class="mapname">
+          <img title="Attack/Defense" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/attack defense icon.png" alt="Attack/Defense">
+          <p>Furnace</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/ctf_casbah.jpg" alt="ctf_casbah">
+        <div class="mapname">
+          <img title="Capture the Flag" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/ctf icon.png" alt="Capture the Flag">
+          <p>Casbah</p>
+        </div>
+      </div>
+    </div>
+        <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/cp_tidal_v4.jpg" alt="cp_tidal_v4">
+        <div class="mapname">
+          <img title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
+          <p>Tidal</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/dom_hydro.jpg" alt="dom_hydro">
+        <div class="mapname">
+          <img title="Domination" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/dom logo.png" alt="Domination">
+          <img title="4 Team" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/4 team logo.png" alt="4 Team">
+          <p>Hydro</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/dom_oilcanyon.jpg" alt="dom_oilcanyon">
+        <div class="mapname">
+          <img title="Domination" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/dom logo.png" alt="Domination">
+          <p>Oil Canyon</p>
+        </div>
+      </div>
+    </div>
+            <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/dom_railway.jpg" alt="dom_railway">
+        <div class="mapname">
+          <img title="Domination" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/dom logo.png" alt="Domination">
+          <p>Railway</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/dom_sawtooth.jpg" alt="dom_sawtooth">
+        <div class="mapname">
+          <img title="Domination" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/dom logo.png" alt="Domination">
+          <p>Sawtooth</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/koth_frigid.jpg" alt="koth_frigid">
+        <div class="mapname">
+          <img title="King of the Hill" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/koth icon.png" alt="King of the Hill">
+          <img title="4 Team" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/4 team logo.png" alt="4 Team">
+          <p>Frigid</p>
+        </div>
+      </div>
+    </div>
+                <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/pl_jinn.jpg" alt="pl_jinn">
+        <div class="mapname">
+          <img title="Payload" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/pl icon.png" alt="Payload">
+          <p>Jinn</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/td_caper.jpg" alt="td_caper">
+        <div class="mapname">
+          <img title="Territorial Domination" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/tc icon.png" alt="Territorial Domination">
+          <p>Caper</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/td_sunnyside.jpg" alt="td_sunnyside">
+        <div class="mapname">
+          <img title="Territorial Domination" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/tc icon.png" alt="Territorial Domination">
+          <p>Sunnyside</p>
+        </div>
+      </div>
+    </div>
+                    <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/vip_badwater.jpg" alt="vip_badwater">
+        <div class="mapname">
+          <img title="VIP" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/vip icon.png" alt="VIP">
+          <p>Badwater</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/vip_harbor.jpg" alt="vip_harbor">
+        <div class="mapname">
+          <img title="VIP" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/vip icon.png" alt="VIP">
+          <p>Harbor</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/vip_mineside.jpg" alt="vip_mineside">
+        <div class="mapname">
+          <img title="VIP" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/vip icon.png" alt="VIP">
+          <p>Mineside</p>
+        </div>
+      </div>
+    </div>
+                        <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/vip_trainyard.jpg" alt="vip_trainyard">
+        <div class="mapname">
+          <img title="VIP" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/vip icon.png" alt="VIP">
+          <p>Trainyard</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/vipr_2bridge.jpg" alt="vipr_2bridge">
+        <div class="mapname">
+          <img title="VIP Race" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/vipr icon.png" alt="VIP Race">
+          <p>2bridge</p>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/classified/vipr_drizzle.jpg" alt="vipr_drizzle">
+        <div class="mapname">
+          <img title="VIP Race" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/vipr icon.png" alt="VIP Race">
+          <p>Drizzle</p>
+        </div>
+      </div>
+    </div>
   </details>
   <details>
     <summary>
       Custom Maps
     </summary>
+                            <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/custom/4koth_3dland_lifted.jpg" alt="4koth_3dland_lifted">
+        <div class="mapname">
+          <img title="King Of The Hill" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/koth icon.png" alt="King Of The Hill">
+          <img title="4 Team" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/4 team logo.png" alt="4 Team">
+          <p>3D Land Lifted</p>
+          <a target="_blank" href="https://gamebanana.com/mods/637117"><img title="Download here" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;margin-left: 5px;" src="/tf2c/assets/gamebanana.png" alt="Gamebanana"></a>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/custom/adf_coaltown.jpg" alt="adf_coaltown">
+        <div class="mapname">
+          <img title="Attack/Defense" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/attack defense icon.png" alt="Attack/Defense">
+          <img title="Capture The Flag" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/ctf icon.png" alt="Capture The Flag">
+          <img title="4 Team" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/4 team logo.png" alt="4 Team">
+          <p>Coaltown</p>
+          <a target="_blank" href="https://gamebanana.com/mods/374227"><img title="Download here" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;margin-left: 5px;" src="/tf2c/assets/gamebanana.png" alt="Gamebanana"></a>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/custom/civctf_deadend_v3_final.jpg" alt="civctf_deadend_v3_final">
+        <div class="mapname">
+          <img title="Capture The Flag" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/ctf icon.png" alt="Capture The Flag">
+          <img title="Civilian" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/civilian icon.png" alt="Civilian">
+          <p>Deadend</p>
+          <a target="_blank" href="https://gamebanana.com/mods/599995"><img title="Download here" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em; margin-left: 5px;" src="/tf2c/assets/gamebanana.png" alt="Gamebanana"></a>
+        </div>
+      </div>
+    </div>
+                                <div class="interior">
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/custom/civdm_rift_r2.jpg" alt="civdm_rift_r2">
+        <div class="mapname">
+          
+          <img title="Deathmatch" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/dm icon.png" alt="Deathmatch">
+          <img title="4 Team" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/4 team logo.png" alt="4 Team">
+          <img title="Civilian" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/civilian icon.png" alt="Civilian">
+          <p>Rift</p>
+          <a target="_blank" href="https://gamebanana.com/mods/586418"><img title="Download here" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;margin-left: 5px;" src="/tf2c/assets/gamebanana.png" alt="Gamebanana"></a>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/custom/civdm_sledend.jpg" alt="civdm_sledend">
+        <div class="mapname">
+          <img title="Deathmatch" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/dm icon.png" alt="Deathmatch">
+          <img title="Civilian" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/civilian icon.png" alt="Civilian">
+          <p>Sledend</p>
+          <a target="_blank" href="https://gamebanana.com/mods/617044"><img title="Download here" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;margin-left: 5px;" src="/tf2c/assets/gamebanana.png" alt="Gamebanana"></a>
+        </div>
+      </div>
+      <div class="mapbox">
+        <img width="270" src="/tf2c/assets/mapimages/custom/cp_2train_tf2c.jpg" alt="cp_2train_tf2c">
+        <div class="mapname">
+          <img title="Control Points" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em;" src="/tf2c/assets/control points icon.png" alt="Control Points">
+          <p>2train</p>
+          <a target="_blank" href="https://gamebanana.com/mods/632699"><img title="Download here" width="30px" height="30px" style="margin-top: 1.4em;margin-right: 0.5em; margin-left: 5px;" src="/tf2c/assets/gamebanana.png" alt="Gamebanana"></a>
+        </div>
+      </div>
+    </div>
   </details>
+  <script>
+    document.addEventListener('click', function(event) {
+      const target = event.target;
+      // Check if the clicked element is an image with mapimages in its src
+      if (target.tagName === 'IMG' && target.src.includes('mapimages')) {
+        // Extract the filename from the src
+        const filename = target.src.split('/').pop();
+        // Remove the file extension
+        const mapName = filename.split('.').slice(0, -1).join('.');
+        // Create the nomination command
+        const command = '!nominate ' + mapName;
+        // Copy to clipboard
+        navigator.clipboard.writeText(command).then(function() {
+          console.log('Copied to clipboard: ' + command);
+          // Show toast notification
+          const toast = document.createElement('div');
+          toast.className = 'toast';
+          toast.textContent = 'Copied!';
+          document.body.appendChild(toast);
+          // Remove toast after animation completes
+          setTimeout(function() {
+            toast.remove();
+          }, 1000);
+        }).catch(function(err) {
+          console.error('Failed to copy to clipboard:', err);
+        });
+      }
+    });
+  </script>
 </html>
