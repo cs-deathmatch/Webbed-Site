@@ -20,7 +20,7 @@ hr {
 	color: rgb(255, 255, 255);
 }
 details {
-  border: 1px solid #aaaaaa;
+  border: 2px solid #ffffff;
   border-radius: 4px;
   padding: 0.5em 0.5em 0;
     font-family: 'TF2 Secondary';
@@ -41,6 +41,26 @@ details[open] {
 }
 
 details[open] summary {
-  border-bottom: 1px solid #aaaaaa;
   margin-bottom: 0.5em;
+}
+.mapbox {
+    display: flex;
+    flex-direction: column;
+  border: 2px solid #ffffff;
+  border-radius: 0px;
+  padding: 0.5em 0.5em 0;
+    color: white;
+    font-size: 15px;
+    max-width: 270px;
+    align-items: center;
+}
+.mapname
+{
+    display: flex;
+    flex-direction: row;
+}
+.interior
+{
+    display: flex;
+    flex-direction: row;
 }
