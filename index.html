@@ -5,13 +5,13 @@
     <!-- Primary Meta Tags -->
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Lise Gay">
+	<meta name="author" content="Lise N4pstr">
 	<meta name="robots" content="index, follow">
 	<meta name="rating" content="general">
 
-    <title>Lise's silly lil' homepage</title>
-    <meta name="title" content="Lise's silly lil' homepage" />
-    <meta name="description" content="Just a homepage for your local transgender furry zoomer" />
+    <title>Lise's homepage</title>
+    <meta name="title" content="Lise N4pstr's homepage" />
+    <meta name="description" content="index.html" />
     <meta name="theme-color" content="#C39FF0">
 
     <link rel="stylesheet" href="/style.css">
@@ -19,15 +19,15 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="http://www.wii.gay/" />
-    <meta property="twitter:title" content="Lise's silly lil' homepage" />
-    <meta property="twitter:description" content="Just a homepage for your local transgender furry zoomer" />
+    <meta property="twitter:title" content="Lise N4pstr's homepage" />
+    <meta property="twitter:description" content="index.html" />
     <meta property="twitter:image" content="http://www.wii.gay/assets/banner_twitter.png" />
 
     <!-- Everything else(?) -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://www.wii.gay/" />
-    <meta property="og:title" content="Lise's silly lil' homepage" />
-    <meta property="og:description" content="Just a homepage for your local transgender furry zoomer" />
+    <meta property="og:title" content="Lise N4pstr's homepage" />
+    <meta property="og:description" content="index.html" />
     <meta property="og:image" content="http://www.wii.gay/assets/banner.png" />
 
 	<!--Mastodon verification-->
@@ -62,6 +62,50 @@ img.fursonaimg {
   align-items: center;
   max-width: 1100px;
 }
+/* How i've handled this is shit. Doesn't position properly on non-16-9 displays, and I'd rather it auto line break instead of needing to bake <br>s in the array 
+https://www.spigotmc.org/threads/solved-minecraft-splash-text-for-any-website-purpose.23945/*/
+#A100 {
+	text-align: center;
+    color: #e3e300;
+    font-size: 1em;
+    font-family:'minecraft';
+    text-shadow:3px 3px #3F3F00;
+    position: absolute;
+	left: 28vw;
+	top: 48vh;
+	max-width: 20%;
+}
+.pop {
+    animation: pop 1s infinite;
+    -webkit-animation: pop 1s infinite;
+}
+@keyframes pop {
+    from {
+        transform:scale(0.95)
+    }
+    50% {
+        transform:scale(1)
+    }
+    to {
+        transform:scale(0.95)
+    }
+}
+@-webkit-keyframes pop {
+    from {
+        -webkit-transform:scale(0.95)
+    }
+    50% {
+        -webkit-transform:scale(1)
+    }
+    to {
+        -webkit-transform:scale(0.95)
+    }
+}
+.tilt {
+    -ms-transform: rotate(25deg);
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
 </style>
 
 
@@ -71,7 +115,13 @@ img.fursonaimg {
 	<label for="onekocheck"></label>
 	<script src="/oneko.js"></script>
 	<script src="/phonealert.js"></script>
-        <h1>Lise's silly lil' homepage</h1>
+</html>
+
+        <h1>Lise's site</h1>
+					<div class="tilt">
+    <div id="A100" class="pop"></div>
+</div>
+		
        		<nav>
             <a title="where you were then!" href="/">home</a> |
             <a title="a whole bunch of images and video" href="/gallery.html">gallery</a> |
@@ -86,15 +136,12 @@ img.fursonaimg {
 	<div class="mainbox">
 
 		<img src="/assets/fursona1.png" class="fursonaimg" title="my fursona (art by my friend kp)"alt="A purple humanoid fox fursona, with white accents. She is wearing a black hoodie with the hood down and front unzipped, along with a basic bra and shorts. the hoodie has various transgender colored features, including arm stripes and hearts. she has a large poofy tail, with a transgender flag sticking out of it. her eyes are closed, mouth open and drooling. she is holding a can of monster, with many empty and spilling cans behind her">
-		 <div class="maintext"> <p>heya! name's Lise
-			<sup style="font-size: 75%;">she/it</sup> 
-			and i'm just your friendly neighborhood gayass trans furry fox girl
+		 <div class="maintext"> <p style="display:inline">Heya! name's</p> <p style="display:inline" title="she/it">Lise,<sup style="font-size: 75%;">*</sup></p> <p style="display:inline">Welcome to my site! I've kinda got a lot here, <s>from flash games and animations</s> (im working on it), to my personal blog, image gallery, and more. So feel free to click around and explore!
 			<br><br>
-			born in <a target="_blank" href="https://howlongagogo.com/date/2004/october/5">'04</a>. idk what other zoomers are hand coding their own websites in html and css. but hey, <a target="_blank" href="https://www.youtube.com/@CathodeRayDude">old shit's cool.</a> <br><br>
-			i like to think i know a lot about computers and programming and stuff, but in reality it took a lot of help from <a target="_blank" href="https://ranid.space">my</a> <a target="_blank" href="https://nightcat.gg">friends</a>
-			just to make this site lmao, so i've got a long way to go. <br><br>
-			aside from the obvious nerd shit, i'm also huge fan of PC gaming (especially valve), and nintendo games. i'm also <a target="_blank" href="/assets/tweets.png">terminally online</a>, so maybe you've seen <a target="_blank" href="/assets/bricked up.jpg">a tweet</a> or <a target="_blank" href="https://youtu.be/COdTiXd_vjA">video</a> of mine before. <br> <br>
-			if you wanna hmu, the easiest way would probably be <a target="_blank" href="https://twitter.com/cs_deathmatch">my twitter</a>, but you can find me everywhere else at the contact button above</p>
+			At time of writing I'm <a target="_blank" href="https://howlongagogo.com/date/2004/october/5">21</a>, so with all the real life things I've got going on lately, I'm not sure how often I'll be able to update this site. But if you want notified whenever I post something new, <s> <a href="under construction.html">I have an RSS feed!</a></s> (im working on it)<br><br>
+			I like to think i know a lot about computers and stuff <p style="display:inline" title="i could probably ace that shit blind, but it's $250 per test im not risking that">(currently working on my A+!)</p>, <p style="display:inline">but in reality it took a lot of help from <a href="credits.html">my friends</a> to get here. So i've got a long way to go. <br><br>
+			Aside from the obvious, I'm also huge fan of PC gaming, nintendo, and retro computing.<br> <br>
+			if you wanna get in contact with me, the easiest way would probably be <a target="_blank" href="https://twitter.com/N4pstr">my twitter</a>, but you can find me everywhere else at the contact button above</p>
 		</div>
     </div>
 	<hr>
@@ -168,6 +215,7 @@ img.fursonaimg {
 	<iframe src="https://john.citrons.xyz/embed?ref=wii.gay" style="margin-left:auto;display:block;margin-right:auto;max-width:732px;width:100%;height:94px;border:none;"></iframe>
 	<img src="/assets/gay_wii.png" alt="An image of a Nintendo Wii console and Wii Remote. The console has the Gilber Baker pride flag overlayed on it, and the remote has the transgender pride flag." class="wiipng" title="a gay wii, get it?">
 	<div><a href="/flash.html"><img src="/assets/flashbang 64.png" alt="A Really Small Flashbang" class="flashbang"></a></div>
+	<script src="splash.js"></script>
 	 </body>
 </html>
 
